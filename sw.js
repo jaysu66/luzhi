@@ -1,5 +1,5 @@
 // 有网先拿最新的，没网用上次存下的
-const C = "luzhi-20261023182349";
+const C = "luzhi-20261024171157";
 const FILES = ["./", "index.html", "manifest.webmanifest", "icon-180.png", "icon-192.png"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(C).then(c => c.addAll(FILES))); self.skipWaiting(); });
 self.addEventListener("activate", e => {
